@@ -55,10 +55,10 @@ app.use(
 app.use(express.static("public"));
 
 const connection = mysql.createConnection({
-  host: "0.0.0.0",
-  user: "root",
-  password: "Englishps#4",
-  database: "dropment",
+  host: "bsgjag7lfmgt0v0dn5jd-mysql.services.clever-cloud.com",
+  user: "u2k6ckipnomefs5n",
+  password: "tXzreCTZ2h73XiG2H6gG",
+  database: "bsgjag7lfmgt0v0dn5jd",
 });
 
 connection.connect((err) => {
