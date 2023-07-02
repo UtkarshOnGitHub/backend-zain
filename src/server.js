@@ -11,6 +11,7 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const { verify } = require("crypto");
 const path = require("path");
+const PORT = process.env.PORT || 8080
 app.use(express.urlencoded({ extended: true }));
 
 const storage = multer.diskStorage({
@@ -1106,6 +1107,6 @@ app.get("/user/id/editbtnstoredisplay2", (req, res) => {
     }
   });
 });
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log("Server started on port 8080");
 });
