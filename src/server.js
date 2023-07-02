@@ -71,7 +71,7 @@ connection.connect((err) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("error!!");
+  res.send("This Is Zain Backend");
 });
 
 app.get("/products/product", (req, res) => {
