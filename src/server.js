@@ -70,7 +70,7 @@ connection.connect((err) => {
 });
 
 app.get("/",(req,res)=>{
-  res.send("Hello World")
+  res.send("Hello World!")
 })
 
 app.get("/products/product", (req, res) => {
