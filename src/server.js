@@ -11,7 +11,7 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const { verify } = require("crypto");
 const path = require("path");
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 
 const storage = multer.diskStorage({
@@ -27,7 +27,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({
-  storage: storage, 
+  storage: storage,
 });
 
 app.use(
@@ -70,9 +70,9 @@ connection.connect((err) => {
   }
 });
 
-app.get("/",(req,res)=>{
-  res.send("Hello World!")
-})
+app.get("/", (req, res) => {
+  res.send("error!!");
+});
 
 app.get("/products/product", (req, res) => {
   const sqlget = "SELECT * FROM products";
@@ -1107,6 +1107,6 @@ app.get("/user/id/editbtnstoredisplay2", (req, res) => {
     }
   });
 });
-app.listen(PORT , () => {
+app.listen(PORT, () => {
   console.log("Server started on port 8080");
 });
